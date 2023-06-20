@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 48; i < 58; i++)
 	{
-		<:xputchar(i);
+		putchar(i);
 		if (i < 57)
 		{
 			putchar(',');
