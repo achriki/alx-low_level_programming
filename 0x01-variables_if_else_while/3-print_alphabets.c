@@ -21,7 +21,7 @@ int main(void)
 	}
 	for (j = 0; j < (int) strlen(up); j++)
 	{
-		putchar(low[j])
+		putchar(low[j]);
 	}
 	putchar('\n');
 	return (0);
