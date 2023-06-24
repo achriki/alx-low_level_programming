@@ -8,23 +8,26 @@
 
 void print_square(int n)
 {
-	int line = 1;
-    int row = 1;
+    int line = 0;
+    int row = 0;
+
     if(n <= 0)
     {
         _putchar('\n');
     }
     else
     {
-        while(row <= n)
+        while(row < n)
         {
-            while(line <= n)
+	    line = 0;
+
+            while(line < n)
             {
                 _putchar('#');
                 line++;
             }
             _putchar('\n');
-            line++;
+            row++;
         }
     }
 }
