@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * _strlen - count str length in a string.
  * @s: pointer to string.
@@ -8,10 +8,10 @@ include "main.h"
 
 int _strlen(char *s)
 {
-	int c = 0;
+	int i = 0;
 
 	while (*s++ != '\0')
-		c++;
+		i++;
 
-	return (c);
+	return (i);
 }
