@@ -26,6 +26,7 @@ char *_strncat(char *dest, char *src, int n)
 	while (*p2 != '\0' && i < n)
 	{
 		*p1 = *p2;
+		p1++;
 		p2++;
 		i++;
 	}
