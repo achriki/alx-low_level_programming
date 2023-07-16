@@ -36,12 +36,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[i] = s1[i];
 		i++;
 	}
-	while (s2[j] != '\0')
-	{
-		p[i] = s2[j];
-		i++;
-		j++;
-	}
+	while (n < len2 && i < (len1 + n))
+		p[i++] = s2[j++];
+
+	while (n >= len2 && i < (len1 + len2))
+		p[i++] = s2[j++];
 	p[i] = '\0';
 	return (p);
 }
