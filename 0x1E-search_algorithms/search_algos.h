@@ -3,11 +3,6 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#ifndef _SORTING_ALGOS_H_
-#define _SORTING_ALGOS_H_
-
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * struct listint_s - singly linked list
